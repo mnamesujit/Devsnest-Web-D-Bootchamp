@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins&family=Space+Grotesk:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: 'Dancing Script', cursive;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-family: 'Space Grotesk', sans-serif;
+}
+.container{
+    width: 1440px;
+    display: flex;
+}
+.left{
+    width: 30%;
+    height: 100%;
+    /* background-color: hsl(278, 68%, 11%); */
+}
+.right{
+    width: 70%;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.checkout-form{
+    width: 350px;
+}
+form label{
+    font-size:18px;
+}
+form input{
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: 2px solid hsl(273, 21%, 73%);
+}
+.f-group{
+    /* width: 100%; */
+    display: flex;
+
+}
+.one{
+    width: 60%;
+    
+}
+.two{
+    width:40%;
+}
+
+.one input{
+    width: 45%;
+}
+.button{
+    width: 100%;
+    font-size: 18px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background-color: hsl(278, 68%, 11%);
+    color: hsl(0, 0%, 100%);
+    padding: 10px;
+}
+/* .card-image{
+    position: relative;
+    
+     */
+.front-card{
+    position: absolute;
+    top: 200px;
+    left: 150px;
+    
+}
+.back-card{
+    position: absolute;
+    top: 500px;
+    left: 200px;
+}
+.logo{
+    display: flex;
+}
+.card-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 450px;
+    height: 250px;
+    color:hsl(0, 0%, 100%);
+  
+
+}
+.logo-text{
+    margin-top: 20px;
+    margin-left:30px;
+   
+    
+}
+.circle{
+    height: 15px;
+    width: 15px;
+    margin-top: 30px;
+    margin-left: 15px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+.data h2{
+   margin-left: 75px; 
+   margin-top: 50px;
+}
+.name{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}

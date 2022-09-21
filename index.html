@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Card</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="left">
+                <img src="./bg-main-desktop.png" alt="">
+            </div>
+            <div class="card-image">
+               <div class="front-card">
+                    <img src="./bg-card-front.png" alt="">
+                    <div class="card-text">
+                        <div class="logo">
+                            <img src="./favicon-32x32.png" alt="" class="logo-text">
+                        <div class="circle"></div>
+                        </div>
+                        <div class="data">
+                            
+                            <h2>2354 4634 6423 6436</h2>
+                            <div class="name">
+                                <p>James Bond</p>
+                            <p>03/30</p>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+               <div class="back-card">
+                    <img src="./bg-card-back.png" alt="">
+               </div>
+            </div>
+            <div class="right">
+                <form action="" class="checkout-form">
+                    <label for="name">cardholder name</label>
+                    <br>
+                    <input type="text" name="name" placeholder="James Bond">
+                    <br>
+                    <label for="number">card number</label>
+                    <br>
+                    <input type="text" name="number" placeholder="0000 0000 0000 0000">
+                    <div class="f-group">
+                        <div class="one">
+                       <label for="exp">exp. date(MM/YY)</label>
+                       <input type="number" name="exp" id="" placeholder="09">
+                       <input type="number" placeholder="2022">
+                       </div>
+                       <div class="two">
+                       <label for="cvc">CVC</label>
+                       <input type="number" min="100" max="999" name="cvc" placeholder="***">
+                       </div>
+                    </div>
+                    <button type="submit" class="button">confirm</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
