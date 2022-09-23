@@ -14,37 +14,38 @@ let personTip = 0.00;
 let totalTip = 0.00;
 
 btn_1.addEventListener("click", function () {
-  tip = (5 / 100);
+  tip = 5;
 });
 btn_2.addEventListener("click", function () {
-  tip = (10 / 100);
+  tip = 10;
 });
 
 btn_3.addEventListener("click", function () {
-  tip = (15 / 100);
+  tip = 15;
 });
 
 btn_4.addEventListener("click", function () {
-  tip = (25 / 100);
+  tip = 25;
 });
 
 btn_5.addEventListener("click", function () {
-  tip = (50 / 100);
+  tip = 50;
 });
 
 
 function customInput(val) {
     btn_6 = (document.getElementById("btn-6").innerHTML = val);
-    tip=(btn_6/100)
+    tip=(btn_6)
 }
 
 function numOfPeople(val) {
     people = document.getElementById("people").innerHTML = val;
-    console.log(people);
-    totalTip = bill * tip;
-    personTip = totalTip / people;
-    document.getElementById("t1").textContent = personTip;
-    document.getElementById("t2").textContent = totalTip;
+    totalTip = (bill * tip) / 100;
+    totalTip = totalTip / people;
+    personTip = (bill / 100) * totalTip;
+    console.log(personTip)
+    document.getElementById("t1").textContent = totalTip;
+    document.getElementById("t2").textContent = personTip;
 }
 
 

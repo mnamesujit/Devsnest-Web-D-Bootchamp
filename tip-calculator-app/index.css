@@ -53,6 +53,7 @@ label{
 }
 .input-form{
     width: 100%;
+    
 }
 .input-form input{
     width: 100%;
@@ -60,9 +61,23 @@ label{
     margin-top: 5px;
     border: 1px solid hsl(186, 14%, 43%);
     border-radius: 5px;
+    font-size: 20px;
+    text-align: right;
+    padding-right: 8px;
+    color:hsl(186, 31%, 38%);
+    font-weight: bold;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .wrapper{
-    margin-top: 30px;
+    margin-top: 15px;
     margin-bottom: 20px;
 } 
 .limit{
@@ -88,6 +103,17 @@ label{
     border: none;
     border-radius: 5px;
 }
+.custom-input{
+    width:90px;
+    height: 32px;
+    margin-left: 6px;
+}
+.custom-input-form::placeholder{
+    font-size: 18px;
+    text-align: center;
+    color:hsl(186, 31%, 38%);
+    font-weight: bold;
+}
 .one{
     margin-right: 5px;
 }
@@ -97,6 +123,10 @@ label{
 
 
 .limit-button:hover{
+    color:hsl(183, 100%, 15%);
+    background-color: hsl(185, 41%, 84%);
+}
+.limit-button:focus{
     color:hsl(183, 100%, 15%);
     background-color: hsl(185, 41%, 84%);
 }
@@ -128,14 +158,22 @@ small{
 h1{
     color:hsl(172, 67%, 45%);
 }
+.input-logo{
+    position: relative;
+    top: -26px;
+    left: 8px;
+}
+
 .right button{
-    margin-top: 40px;
-    margin-left: 26px;
-    width: 80%;
+    margin-top: 60px;
+    margin-left: 15px;
+    width: 90%;
     padding: 5px;
-    font-size: 22px;
+    font-size: 16px;
+    font-weight: 600;
     background-color: hsl(172, 67%, 45%);
     border: none;
     border-radius: 5px;
+    color: hsl(183, 100%, 15%);
     
 }
